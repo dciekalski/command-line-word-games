@@ -14,3 +14,24 @@
 // FR008 — Reject an invalid or missing move.
 // If no move is given, or it isn't one of rock, paper or scissors, print a
 // usage message instead of letting the program crash or silently guess.
+
+const args = process.argv.slice(2);
+console.log('args:', args);
+
+const playerMove = args[0];
+console.log('Player move:', playerMove);
+
+if (playerMove === undefined) {
+    console.log('Please choose rock, paper or scissors.');
+    return;
+}
+
+const validMoves = ['rock', 'paper', 'scissors'];
+
+const move = playerMove.toLowerCase();
+const isValid = validMoves.includes(move);
+
+if (isValid === false) {
+    console.log('Invalid move. Please choose rock, paper or scissors.');
+    return;
+}
