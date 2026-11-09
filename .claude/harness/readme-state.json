@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "commit": "6ad9df8758a1d8d4a387d06fd5817f7566b8cf93",
+    "fingerprint": "sha256:73e98d8eeebe3f44dc787d5df984b81872d6da381172f362c8debfb9d03690b9"
+  },
+  "readme": {
+    "path": "README.md",
+    "hash": "sha256:0ebb7a470d9d4a950a1e735276b838499515ba78d25866a5a95331ad4ccf43b7"
+  }
+}
