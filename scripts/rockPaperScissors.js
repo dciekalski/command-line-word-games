@@ -16,10 +16,8 @@
 // usage message instead of letting the program crash or silently guess.
 
 const args = process.argv.slice(2);
-console.log('args:', args);
 
 const playerMove = args[0];
-console.log('Player move:', playerMove);
 
 if (playerMove === undefined) {
     console.log('Please choose rock, paper or scissors.');
@@ -35,3 +33,21 @@ if (isValid === false) {
     console.log('Invalid move. Please choose rock, paper or scissors.');
     return;
 }
+
+const randomIndex = Math.floor(Math.random() * validMoves.length);
+
+const computerMove = validMoves[randomIndex];
+
+let result = ('')
+
+if (move === computerMove) {
+    result = 'Draw!';
+} else if (move === 'rock' && computerMove === 'scissors') {
+    result = 'You win!';
+} else if (move === 'paper' && computerMove === 'rock') {
+    result = 'You win!';
+} else if (move === 'scissors' && computerMove === 'paper') {
+    result = 'You win!';
+} else { result = 'You lose!' }
+
+console.log(`You chose ${move}. Computer chose ${computerMove}. ${result}`);
