@@ -1,0 +1,24 @@
+{
+  "student": "danielciekalski",
+  "unlocks": [
+    {
+      "task": "FR008",
+      "at": "2026-11-09T15:26:44.562Z",
+      "route": "written",
+      "branch": "FR005-rock-paper-scissors",
+      "commits": [
+        "61b66f0db6c98087da2477834a9709a6a5fd50c8"
+      ]
+    },
+    {
+      "task": "FR005",
+      "at": "2026-11-10T10:03:45.573Z",
+      "route": "written",
+      "branch": "FR005-rock-paper-scissors",
+      "commits": [
+        "82530eb152600bad99888b8b6c90802c333dce94",
+        "61b66f0db6c98087da2477834a9709a6a5fd50c8"
+      ]
+    }
+  ]
+}
